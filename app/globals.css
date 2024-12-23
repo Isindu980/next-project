@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: linear-gradient(135deg, #010718, #0f2027, #203a43, #2c5364);
+  --foreground: #010718;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: linear-gradient(135deg, #010718, #0f2027, #203a43, #2c5364);
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+  background-color: #333;
+}
+
+nav ul li {
+  color: white;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
