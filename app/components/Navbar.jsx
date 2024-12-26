@@ -32,6 +32,9 @@ export default function Navbar() {
     >
       <div style={{ fontWeight: 'bold', fontSize: '1.5rem' }}>Rogue</div>
       <div className="desktop-menu" style={{ display: 'flex', gap: '30px' }}>
+      <Link href="/Admindash" style={{ textDecoration: 'none', color: 'inherit' }}>
+          Admin
+        </Link>
         <Link href="/Home" style={{ textDecoration: 'none', color: 'inherit' }}>
           Home
         </Link>

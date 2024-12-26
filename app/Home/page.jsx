@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useSelector } from "react-redux";
 
 export default function Home() {
-  const token = useSelector((state) => state.auth.token); // move the selector here
+  const token = useSelector((state) => state.auth.token); 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const router = useRouter();
 
